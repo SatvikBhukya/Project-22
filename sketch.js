@@ -28,14 +28,13 @@ function setup() {
 	groundSprite.shapeColor=color(255)
 
 	box1 = createSprite(500, 610, 20,100);
-	box1.shapeColor=color("white")
+	box1.shapeColor=color("black")
 
 	box2 = createSprite(300,610, 20,100);
-	box2.shapeColor=color("white")
+	box2.shapeColor=color("black")
 
 	box3 = createSprite(400,650, 200,20);
-	box3.shapeColor=color("white")
-    
+	box3.shapeColor=color("black")
 
 	engine = Engine.create();
 	world = engine.world;
@@ -45,7 +44,7 @@ function setup() {
 	World.add(world, packageBody);
 	
 
-	//Create a Ground
+	
 	ground = Bodies.rectangle(width/2, 650, width, 10 , {isStatic:true} );
 	 World.add(world, ground);
 	 
